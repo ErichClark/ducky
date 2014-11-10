@@ -25,30 +25,25 @@ class PortCalc
 
 		Console.Write ("This program calculates the area of a port window \n and the gasket length around it.\n" +
 			"We can make windows with radii between " + MIN_RADIUS + " and " + MAX_RADIUS + " inches.\n\n");
-		while(true)
-		{
-
-			radius = readValue ("Enter port window radius between ", MIN_RADIUS, MAX_RADIUS);
-
-			if (radius == 0){
-				break;
-			}
-
-			holeRadius = radius + GASKET_THICKNESS;
-			glassArea = PI * ( radius * radius ) ;
-			glassCost = glassArea * GLASS_COST_PER_SQ_IN;
-			gasketLength = 2 * PI * radius;
-			gasketCost = gasketLength * GASKET_COST_PER_IN;
-			totalCost = glassCost + gasketCost;
 
 
-			Console.WriteLine ( "\nFor a window with a radius of " + radius + " inches:");
-			Console.WriteLine ( "Area in sq inches: {0,-20:0.00} Cost: ${1,-15:##,##0.00}", glassArea, glassCost ) ;
-			Console.WriteLine ( "Gasket in inches:  {0,-20:0.00} Cost: ${1,-15:##,##0.00}", gasketLength, gasketCost ) ;
-			Console.WriteLine ( "Total window cost: ${0,-20:0.00}", totalCost );
-			Console.WriteLine ( "INSTALLATION NOTE: This port will require a hole with a radius of " + holeRadius + " inches.");
-			Console.WriteLine ( "Enter another port radius or 0 to exit program.\n");
-		}
+		radius = readValue ("Enter port window radius between ", MIN_RADIUS, MAX_RADIUS);
+
+		holeRadius = radius + GASKET_THICKNESS;
+		glassArea = PI * ( radius * radius ) ;
+		glassCost = glassArea * GLASS_COST_PER_SQ_IN;
+		gasketLength = 2 * PI * radius;
+		gasketCost = gasketLength * GASKET_COST_PER_IN;
+		totalCost = glassCost + gasketCost;
+
+
+		Console.WriteLine ( "\nFor a window with a radius of " + radius + " inches:");
+		Console.WriteLine ( "Area in sq inches: {0,-20:0.00} Cost: ${1,-15:##,##0.00}", glassArea, glassCost ) ;
+		Console.WriteLine ( "Gasket in inches:  {0,-20:0.00} Cost: ${1,-15:##,##0.00}", gasketLength, gasketCost ) ;
+		Console.WriteLine ( "Total window cost: ${0,-20:0.00}", totalCost );
+		Console.WriteLine ( "INSTALLATION NOTE: This port will require a hole with a radius of " + holeRadius + " inches.");
+		Console.WriteLine ( "Enter another port radius or 0 to exit program.\n");
+
 
 	}
 	static double readValue ( 
@@ -63,7 +58,7 @@ class PortCalc
 			Console.WriteLine (prompt + " between " + min + " and " + max );
 			string resultString = Console.ReadLine ();
 			result = double.Parse(resultString);
-		} while ( (result < min) || (result > max) || (result == 0 );
+		} while ( (result < min) || (result > max) );
 		return result;
 	}
 }

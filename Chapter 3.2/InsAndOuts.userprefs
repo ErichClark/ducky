@@ -1,8 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Test\Main.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="InsAndOuts\Main.cs">
     <Files>
-      <File FileName="Test\Main.cs" Line="17" Column="20" />
+      <File FileName="InsAndOuts\Main.cs" Line="11" Column="35" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">

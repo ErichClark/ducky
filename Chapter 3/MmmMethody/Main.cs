@@ -36,5 +36,7 @@ namespace MmmMethody
 			} while ( (result < min) || (result > max) );
 			return result;
 		}
+
+		void InsAndOuts();
 	}
 }

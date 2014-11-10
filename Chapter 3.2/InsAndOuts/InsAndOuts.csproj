@@ -5,10 +5,10 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E8D2F6E0-93EF-4C6B-9E2C-78AF7EF8F621}</ProjectGuid>
+    <ProjectGuid>{1AEED2F2-EA5F-4D8A-9FD4-6711F8505593}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MmmMethody</RootNamespace>
-    <AssemblyName>MmmMethody</AssemblyName>
+    <RootNamespace>InsAndOuts</RootNamespace>
+    <AssemblyName>InsAndOuts</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -37,7 +37,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
-    <Compile Include="InsAndOuts.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

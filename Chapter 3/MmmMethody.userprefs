@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MmmMethody\Main.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MmmMethody\InsAndOuts.cs">
     <Files>
-      <File FileName="MmmMethody\Main.cs" Line="24" Column="3" />
+      <File FileName="MmmMethody\Main.cs" Line="1" Column="1" />
+      <File FileName="MmmMethody\InsAndOuts.cs" Line="10" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
