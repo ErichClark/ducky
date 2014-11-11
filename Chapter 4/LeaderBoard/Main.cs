@@ -18,7 +18,7 @@ struct Account
 
 
 
-class LeaderBoard
+public class LeaderBoard
 {
 	public static void Main ()
 	{
@@ -33,14 +33,34 @@ class LeaderBoard
 		Console.WriteLine ("Personal Best: " + ErichsAccount.PersonalBest);
 
 		// PrintAccount (ErichsAccount);
+
+		if (ErichsAccount.HighScore (10000)) {
+			Console.WriteLine ("New high score!");
+		} else {
+			Console.WriteLine ("Your highest score was: " + Account.PersonalBest);
+		}
 	}
-	
+}
+
+public class HighScore
+{
 	public void PrintAccount ( Account a ) 
 	{ 
 		Console.WriteLine ( "Name: " + a.Name ); 
 		Console.WriteLine ( "Address: " + a.Email ); 
 		Console.WriteLine ( "Balance: " + a.PersonalBest ); 
 	}
+
+	private bool NewHighScore ( int newScore )
+	{
+		if (newScore < PersonalBest) {
+			return false;
+		}
+		PersonalBest = newScore;
+		return true;
+	}
+
+
 }
 
 
