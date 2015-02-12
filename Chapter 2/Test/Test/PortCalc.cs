@@ -49,7 +49,7 @@ class PortCalc
 	static double readValue ( 
 	                         string prompt, // prompt for user
 	                         double min,    // lowest allowable value
-	                         double max     // largest allowable value
+	                         double max     // largest allowable value.
 	                         )
 	{
 		double result = 0;
